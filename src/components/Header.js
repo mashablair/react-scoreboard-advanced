@@ -4,7 +4,7 @@ import Stats from './Stats';
 const Header = (props) => {
   return (
     <header>
-      <Stats totalPlayers={props.totalPlayers}/>
+      <Stats players={props.players}/>
       <h1>{ props.title }</h1>
     </header>
   );
