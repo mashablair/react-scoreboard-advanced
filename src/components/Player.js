@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Counter from './Counter';
+import Icon from './Icon';
 
 class Player extends PureComponent {
   static propTypes = {
@@ -17,6 +18,7 @@ class Player extends PureComponent {
       <div className="player">
         <span className="player-name">
           <button className="remove-player" onClick={() => this.props.removePlayer(this.props.id)}>✖</button>
+          <Icon />
           { this.props.name }
         </span>
 
